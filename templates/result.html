@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin: 50px; }
+        .container { max-width: 500px; margin: auto; padding: 20px; border: 1px solid #ddd; border-radius: 10px; }
+        img { max-width: 100%; height: auto; border-radius: 10px; margin-top: 20px; }
+        h2 { color: #007BFF; }
+        button { background-color: #28a745; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-top: 20px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <div class="container">
+        <h2>Identified Species: {{ species }}</h2>
+        <img src="{{ image }}" alt="Uploaded Image">
+        <br>
+        <button onclick="window.location.href='/'">Upload Another Image</button>
+    </div>
+</body>
+</html>
